@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -Wall -Wextra
+
+all: pipes_game
+
+pipes_game: pipes_game.c
+	$(CC) $(CFLAGS) pipes_game.c -o pipes_game
+
+clean:
+	rm -f pipes_game

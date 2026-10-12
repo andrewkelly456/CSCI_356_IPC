@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -pthread
+
+all: sockets_game
+
+sockets_game: sockets_game.c
+	$(CC) $(CFLAGS) sockets_game.c -o sockets_game
+
+clean:
+	rm -f sockets_game
